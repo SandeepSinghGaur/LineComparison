@@ -22,8 +22,13 @@ class LineComparison
         if (first_line_length == second_line_length)
             Console.WriteLine("Both Lines are Equal in Length :" + " " + first_line_length);
         else
-            Console.WriteLine("Both Lines are Unequal in Length :" + " " + first_line_length + " " + second_line_length);
+        {
+            if (first_line_length > second_line_length)
+                Console.WriteLine("First Line" + " " + first_line_length + "is greater then second line ");
+            else
+                Console.WriteLine("Second Line" + " " + second_line_length + " is greater then first line ");
 
+        }
     }
 }
 
